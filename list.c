@@ -85,6 +85,10 @@ unsigned char find_entry(char* str) {
 	if (e == NULL) {
 		return 0;
 	} else {
-		return 1;
+		if (strcmp(str, e->str) == 0) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 }
